@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drag and Drop Recycling</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <title>Document</title>
 </head>
 <body>
-    
+    <div class="dropzone recycle" id="recycle" ondrop="drop(event, 'recycle')" ondragover="allowDrop(event)">
+        <p>Recycle</p>
+    </div>
+
+    <div class="dropzone trash" id="trash" ondrop="drop(event, 'trash')" ondragover="allowDrop(event)">
+        <p>Trash</p>
+    </div>
+
+    <div class="draggable-item" id="item" draggable="true" ondragstart="drag(event)">
+        <img src="https://via.placeholder.com/100" alt="Draggable Item" id="drag1">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

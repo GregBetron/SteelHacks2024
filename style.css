@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.dropzone {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+}
+
+.recycle {
+    background-color: #e0ffe0;
+}
+
+.trash {
+    background-color: #ffe0e0;
+}
+
+.draggable-item {
+    position: absolute;
+    bottom: 20px;
+}
+
+.draggable-item img {
+    width: 100px;
+    height: 100px;
+    cursor: grab;
+}
